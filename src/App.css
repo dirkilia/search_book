@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+button {
+  border: 0
+}
+
+button:hover {
+  text-shadow: 3px 3px 20px rgb(90, 89, 89);
+}
+
+header {
+  min-height: 35vh;
+  background-image: url('./img/back.jpg');
+  object-fit: cover;
+}
+
+header h1 {
+  color: white;
+  margin-bottom: 7vh;
+  padding-top: 2vh;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .search input {
+  width: 45vw;
+  height: 3vh;
+  border-radius: 10px;
+  font-size: 3vh;
+}
+
+header .search button {
+  margin-top: 1vh;
+  width: 10vw;
+  height: 5vh;
+  font-size: 3vh;
+  border-radius: 10px;
+}
+
+.sorting_options #categories, #sorting{
+  height: 5vh;
+  font-size: 3vh;
+  width: 15vw;
+  margin: 3vh;
+  border-radius: 1vh;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card {
+  width: 20vw;
+  height: 30vh;
+  margin: 30px
+}
+
+.card:hover {
+  box-shadow: 1px 0px 10px 11px rgba(50, 50, 50, 0.75);
+}
+
+.card .categories, .author {
+  color: grey;
+}
+
+.card .title {
+  font-weight: bold;
+}
+
+.load_btn button {
+  height: 10vh;
+  font-size: 3vh;
+  width: 10vw;
+  border-radius: 1vh;
+  margin-top: 2vh;
+}
+
+.book_info {
+  display: flex;
+}
+
+.book_info img {
+  height: 40vh;
+  width: 40vw;
+  object-fit: contain;
+}
+
+.book_info .book_page_content {
+  width: 50vw;
+  justify-content: flex-start;
+}
+
+.book_page > div{
+  display: flex;
+  justify-content: left;
+  height: 15vh;
+}
+
+.book_page  button {
+  height: 3vh;
+  width: 5vw;
+  font-size: 2vh;
+  margin: 10vh;
+}
+
+.book_page p {
+  text-align: left;
+}
+
+.book_page .authors, .categories {
+  color: grey;
+}
+
+.results {
+  text-align: center;
+  margin-top: 1vh;
+}
+
+@media (max-width: 650px) { 
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+ }
